@@ -18,17 +18,17 @@ namespace EFMigrationExample.Database
             }
         }
 
-      /*  protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<Genre>().HasKey(prop => prop.XXXX);
+            modelBuilder.Entity<Genre>().HasKey(prop => prop.Id);
             //modelBuilder.Entity<Genre>().Property(prop => prop.Name).HasMaxLength(150).IsRequired();
             //modelBuilder.Entity<Genre>().ToTable(name: "tb_Genero", schema: "Peliculas");
 
             //modelBuilder.Entity<Actor>().Property(prop => prop.BirthDate).HasColumnType("Date");
             //modelBuilder.Entity<Cinema>().Property(prop => prop.Price).HasPrecision(9, 2);
             //modelBuilder.Entity<MovieActor>().HasKey(prop => new { prop.MovieId, prop.ActorId });   
-         }*/
+         }
 
         public virtual DbSet<Genre> Genres
         {
